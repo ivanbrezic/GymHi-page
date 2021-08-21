@@ -1,0 +1,653 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*active link on navigation*/
+.active {
+    background: #c05832;
+    border-radius: 10px;
+}  
+
+
+/*INDEX.HTML*/
+
+/*Header*/
+
+#main-header {
+    height: 100vh;
+    background: url(../img/gym.jpg) no-repeat center /cover;
+    opacity: .85;
+}
+
+
+/*navigation bar*/
+.nav-links,
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    padding-top: 2rem;
+}
+
+.nav-links li {
+    margin: .5rem;
+}
+
+.nav-links li a {
+    font-size: 1rem;
+    padding: .4rem .6rem;
+}
+
+/*Showcase*/
+
+.showcase {
+    margin-top: 4rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #080808;
+}
+
+.main-heading {
+    color: #c05832;
+}
+
+.showcase h3 {
+    font-size: 1.2rem;
+    color: #080808;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background: #c05832;
+    font-size: .8rem;
+    padding: .4rem .6rem;
+    border-radius: 10px;
+}
+
+/*Footer*/
+footer {
+    padding: 1rem;
+    text-align: center;
+    background: #080808;
+    color: #fff;
+}
+
+.footer-links i {
+    margin: .5rem 1rem 1.5rem .5rem;
+    color: #c05832;
+}
+
+.footer-copy {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+
+/*Media queries*/
+
+@media only screen and (min-width: 680px) {
+
+    /*navigation bar*/
+    .nav-links {
+        flex-direction: row;
+}
+
+    .nav-links li {
+    margin: .7rem;
+}
+
+    .nav-links li a {
+        font-size: 1.1rem;
+        padding: .5rem .7rem;
+    }
+
+    /*Showcase*/
+
+    .showcase {
+        margin-top: 14rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.showcase h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    font-size: .9rem;
+    padding: .5rem .8rem;
+    border-radius: 10px;
+}
+}
+
+
+@media only screen and (min-width: 990px) {
+
+    /*navigation bar*/
+
+    .nav-links li {
+     margin: 1rem;
+}
+
+    .nav-links li:hover {
+        background: #c05832;
+        padding: .3rem 0;
+        border-radius: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 1.4rem;
+    }
+
+    /*Showcase*/
+
+    .showcase {
+        margin-top: 17rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.showcase h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: .7rem .9rem;
+}
+
+.btn:hover {
+    background: #702f17;
+}
+}
+
+@media only screen and (min-width: 1600px) {
+
+  
+    /*Showcase*/
+
+.showcase h3 {
+    color: #080808;
+}
+}
+
+
+
+
+/*ABOUT.HTML*/
+
+/*Navigation bar*/
+
+.nav {
+    background: #080808;
+}
+
+.nav .nav-links {
+    padding-bottom: 2rem;
+}
+
+/*Section about*/
+#section-about-1 {
+    background: url(../img/gym2.jpg) no-repeat center /cover;
+    height: 90vh;
+}
+
+.box-1 h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.box-1,
+#section-about-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    background: #08080852;
+    color: #fff;
+    border-top: 7px solid #c05832;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+ .btn-2 {
+    font-size: .8rem;
+    padding: .5rem .6rem;
+    border: 1.5px solid #c05832;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/*Section about 2*/
+#section-about-2 {
+    background: #c05832;
+    color: #fff;
+    padding: 3rem;
+}
+
+.about-2-text h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.section-about-2-flex,
+.about-2-text,
+.about-2-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-about-2-flex {
+    padding: 2rem;
+}
+
+.about-2-text {
+    margin-bottom: 4rem;
+}
+
+.about-2-text p {
+    margin-top: 0;
+}
+
+.about-2-text .btn-3 {
+    font-size: .8rem;
+    padding: .5rem .6rem;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/*Media queries for about.html*/
+
+@media only screen and (min-width: 680px) {
+
+    .container {
+        max-width: 70%;
+    }
+}
+
+/*Ipad pro*/
+@media only screen and (min-width: 1020px) {
+    .container {
+        max-width: 50%;
+    }
+
+/*navigation*/
+    .nav-links li a {
+        font-size: 1.7rem;
+    }
+
+ /*Section about*/
+    #section-about-1 {
+        height: 80vh;
+    }
+
+.box-1 h3 {
+    font-size: 2.5rem;
+}
+
+.box-1 p {
+    font-size: 1.5rem;
+}
+
+.box-1 .btn-2 {
+    font-size: 1.3rem;
+    padding: .7rem .9rem;
+}
+
+/*Section about 2*/
+.about-2-text h3 {
+    font-size: 2.5rem;
+}
+
+.about-2-text p {
+    font-size: 1.5rem;
+}
+
+.about-2-text .btn-3 {
+    font-size: 1.3rem;
+    padding: .7rem .9rem;
+}
+}
+
+@media only screen and (min-width: 1060px) {
+    
+/*navigation*/
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav-links li:hover {
+    background: #c05832;
+    padding: .3rem 0;
+    border-radius: 10px;
+}
+
+.nav-links li a {
+    font-size: 1.3rem;
+}
+
+/*Section about*/
+
+#section-about-1 {
+    height: 100vh;
+}
+
+.box-1 h3 {
+font-size: 1.7rem;
+}
+
+.box-1 p {
+font-size: 1.1rem;
+}
+
+.box-1 .btn-2 {
+font-size: 1rem;
+}
+
+.box-1 .btn-2:hover {
+    background: #0808088e;
+    }
+
+/*Section about 2*/
+.about-2-text h3 {
+font-size: 1.7rem;
+}
+
+.about-2-text p {
+font-size: 1.1rem;
+}
+
+.about-2-text .btn-3 {
+font-size: 1rem;
+}
+
+.about-2-text .btn-3:hover {
+    background: #702f17;
+}
+
+}
+
+@media only screen and (min-width: 1500px) {
+    .container {
+        max-width: 40%;
+    }
+
+    .section-about-2-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-about-2 .container {
+        max-width: 95%;
+    }
+
+    .about-2-text,
+    .about-2-img {
+        flex: 1;
+    }
+
+    .about-2-text {
+        margin-right: 2rem;
+    }
+
+    .about-2-img img {
+        border-radius: 10px;
+    }
+}
+
+/*PLANS.HTML*/
+
+/*Section-showcase*/
+
+#showcase {
+    background: #c05832;
+    color: #fff;
+    height: 30vh;
+}
+
+#showcase,
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase h2 {
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/*Section plans*/
+
+#plans {
+    background: #fff;
+    margin: 3rem 2rem;
+}
+
+#plans .container .box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#plans .box-2 {
+    background: #0808081a;
+    color: #080808;
+    border-top: 7px solid #c05832;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.box-2 i {
+    color: #c05832;
+}
+
+.box-2 ul li {
+    text-align: center;
+    padding: .5rem;
+    border-bottom: 2px solid #c05832;
+    border-radius: 3px;
+    margin-bottom: .5rem;
+}
+
+.box-2 .btn-2  {
+    color: #080808;
+}
+
+/*Media queries for plans.html*/
+
+@media only screen and (min-width: 1059px) {
+    /*Section-showcase*/
+    #showcase {
+        margin-top: 8.1rem;
+    }
+
+    /*section-plans*/
+    #plans .container {
+        max-width: 40%;
+    }
+
+    .box-2 .btn-2:hover {
+        background: #0808082c;
+        }
+}
+
+@media only screen and (min-width: 1500px) {
+    /*Section-plans*/
+    #plans .container {
+        max-width: 95%;
+    }
+    
+    #plans,
+    #plans .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+    #plans .container .box-2 {
+        margin-right: 2rem;
+        flex: 1 45%;
+    }
+}
+
+
+/*SIGNUP.HTML*/
+
+/*Form-section*/
+
+#section-form {
+    background: #c05832;
+    padding: 2rem;
+    }
+
+#section-form .container {
+    margin: 3rem auto;
+}
+
+/*h2-sign-up*/
+.form-heading {
+    text-align: center;
+    padding: 1rem 0;
+    background: #c05832;
+    color: #fff;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+
+.form-heading h2 {
+    margin: 0;
+}
+
+.form-wrap {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.form-group  {
+    padding: .5rem;
+}
+
+.form-wrap,
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    padding: .3rem 0;
+}
+
+input,
+select,
+option  {
+    padding: .5rem .3rem;
+    font-family: Tahoma, sans-serif;
+}
+
+textarea {
+    padding: .3rem 1rem;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+.form-paragraph {
+    font-size: .8rem
+}
+
+/*Media queries for signup.html*/
+
+@media only screen and (min-width: 800px) {
+    .container {
+        max-width: 60%;
+    }
+} 
+
+
+@media only screen and (min-width: 950px) {
+    .container {
+        max-width: 50%;
+    }
+} 
+
+@media only screen and (min-width: 1059px) {
+    #section-form {
+        margin-top: 8.1rem;
+    }
+
+    .form-group .btn-2:hover {
+        background: #08080841;
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 40%;
+    }
+} 
+
+@media only screen and (min-width: 1800px) {
+    .container {
+        max-width: 30%;
+    }
+} 
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>GymHi</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a class="active" href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <!--section-form-->
+    <main>
+        <section id="section-form">
+            <div class="container">
+                <form action="signup.html" method="post">
+                    <div class="form-wrap">
+                        <div class="form-heading">
+                            <h2>Sign Up</h2>
+                        </div>
+                        <!--User first and last name-->
+                        <div class="form-group">
+                            <label for="user_name">First Name:</label>
+                            <input type="text" id="user_name" name="user_first_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="user_last_name">
+                        </div>
+                        <!--email-->
+                        <div class="form-group">
+                            <label for="user_mail">Email:</label>
+                            <input type="text" id="user_mail" name="user_mail">
+                        </div>
+                        <!--Gender-->
+                        <div class="form-group">
+                            <label for="gender">Select Gender:</label>
+                            <select id="gender" name="user_gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <!--Subscription plan-->
+                        <div class="form-group">
+                            <label for="user_subscription">Choose Your Subscription Plan:</label>
+                            <select name="user_subscription" id="user_subscription">
+                                <option value="bronze">Bronze - 25$</option>
+                                <option value="silver">Silver - 35$</option>
+                                <option value="gold">Gold - 50$</option>
+                            </select>
+                        </div>
+                        <!--textarea-->
+                        <div class="form-group">
+                            <label for="comment">Have Any Questions?</label>
+                            <textarea name="user_comment" id="comment" cols="15" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-paragraph">*After submitting, we will sent payment options and your
+                                membership info on e-mail
+                                provided in this form.</p>
+                        </div>
+                        <!--button-->
+                        <div class="form-group">
+                            <button type="submit" class="btn-2">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-links">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="far fa-envelope fa-2x"></i>
+        </div>
+        <div class="footer-copy">&copy;Made by Ivan Brezić</div>
+    </footer>
+
+</body>
+
+</html>
